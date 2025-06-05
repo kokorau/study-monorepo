@@ -41,6 +41,7 @@ function moveHtmlFiles() {
 
 export default defineConfig({
   plugins: [vue(), react(), moveHtmlFiles()],
+  base: process.env.NODE_ENV === 'production' ? '/study-monorepo/' : '/',
   build: {
     rollupOptions: {
       input: generateRouteInputs(__dirname)
