@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Study Monorepo</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 2rem;
+        line-height: 1.6;
+        color: #333;
+        background: #f8f9fa;
+      }
+      .card {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        margin: 1rem 0;
+      }
+      h1 { color: #2563eb; margin-bottom: 1rem; }
+      h2 { color: #374151; margin-top: 2rem; }
+      .badge {
+        display: inline-block;
+        background: #e5f3ff;
+        color: #2563eb;
+        padding: 0.25rem 0.75rem;
+        border-radius: 12px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+      .back-link {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 0.75rem 1.5rem;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background 0.2s;
+      }
+      .back-link:hover {
+        background: #1d4ed8;
+      }
+      .highlight {
+        background: #fef3c7;
+        padding: 1rem;
+        border-radius: 6px;
+        border-left: 4px solid #f59e0b;
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="badge">📄 Plain HTML Page</div>
+      <h1>📖 About This Project</h1>
+      
+      <div class="highlight">
+        <strong>注目:</strong> このページは外部ライブラリに依存しない、プレーンなHTMLページです。
+        ReactやVueなどのフレームワークを使用せず、純粋なHTML + CSS + JavaScriptで構築されています。
+      </div>
+      
+      <h2>🎯 プロジェクトの目的</h2>
+      <p>
+        Study Monorepoは、現代的なWebアプリケーション開発における
+        <strong>モノレポ構成</strong>の学習と実践を目的としています。
+      </p>
+      
+      <h2>📚 学習内容</h2>
+      <ul>
+        <li><strong>pnpm workspaces</strong> - 効率的なパッケージ管理</li>
+        <li><strong>Vite</strong> - 高速ビルドツールの活用</li>
+        <li><strong>TypeScript</strong> - 型安全な開発環境</li>
+        <li><strong>マルチフレームワーク</strong> - React/Vueの共存</li>
+        <li><strong>共通ライブラリ</strong> - 認証機能の共有</li>
+        <li><strong>動的ルーティング</strong> - ファイルベースのページ生成</li>
+      </ul>
+      
+      <h2>🏗️ アーキテクチャの特徴</h2>
+      <p>
+        このプロジェクトでは、フレームワークベースのアプリケーションと
+        プレーンなHTMLページが共存しています。これにより、用途に応じて
+        最適な技術選択ができることを実証しています。
+      </p>
+      
+      <ul>
+        <li><strong>フレームワークページ</strong> - 複雑なインタラクションが必要な場合</li>
+        <li><strong>プレーンHTML</strong> - シンプルな情報表示やランディングページ</li>
+      </ul>
+      
+      <a href="/" class="back-link">← ホームに戻る</a>
+    </div>
+  </body>
+</html>

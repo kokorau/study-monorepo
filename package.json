@@ -1,0 +1,19 @@
+{
+  "name": "study-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "./scripts/dev.sh",
+    "build": "./scripts/build.sh",
+    "preview": "pnpm --filter @study-monorepo/web preview",
+    "clean": "pnpm --recursive exec rm -rf dist node_modules/.vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
